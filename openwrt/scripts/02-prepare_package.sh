@@ -166,3 +166,12 @@ git clone https://$github/sbwml/luci-app-mjpg-streamer feeds/luci/applications/l
 # unzip
 rm -rf feeds/packages/utils/unzip
 git clone https://$github/sbwml/feeds_packages_utils_unzip feeds/packages/utils/unzip
+
+# DAED-NEXT QiuSimons
+git clone https://github.com/QiuSimons/luci-app-daed-next package/new/daed-next
+
+# sirpdboy advanced
+git clone https://github.com/sirpdboy/luci-app-advanced package/new/advanced/luci-app-advanced
+
+# luci-app-ddns-go
+git clone https://github.com/sirpdboy/luci-app-ddns-go package/new/ddns-go
