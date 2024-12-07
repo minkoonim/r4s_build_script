@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+apt-get install -y clang-15 llvm-15 npm # added
+
 # Rockchip - rkbin & u-boot
 rm -rf package/boot/rkbin package/boot/uboot-rockchip package/boot/arm-trusted-firmware-rockchip
 if [ "$platform" = "rk3568" ]; then
@@ -33,7 +35,7 @@ git clone https://$github/sbwml/tools_dwarves tools/dwarves
 sed -i 's/noinitrd/noinitrd mitigations=off/g' target/linux/x86/image/grub-efi.cfg
 
 # default LAN IP
-sed -i "s/192.168.1.1/$LAN/g" package/base-files/files/bin/config_generate
+sed -i "s/192.168.10.1/$LAN/g" package/base-files/files/bin/config_generate
 
 # Use nginx instead of uhttpd
 if [ "$ENABLE_UHTTPD" != "y" ]; then

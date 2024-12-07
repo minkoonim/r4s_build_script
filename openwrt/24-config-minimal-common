@@ -81,7 +81,7 @@ CONFIG_NGINX_STREAM_REAL_IP=y
 ### APPS
 CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-cpufreq=y
-CONFIG_PACKAGE_luci-app-ddns=y
+# CONFIG_PACKAGE_luci-app-ddns=y // will use ddns-go instead
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-filemanager=y
 CONFIG_PACKAGE_luci-app-oaf=y
@@ -89,11 +89,17 @@ CONFIG_PACKAGE_luci-app-ramfree=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-webdav=y
+CONFIG_PACKAGE_luci-app-daed=y
+CONFIG_PACKAGE_luci-app-wolplus=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_luci-app-smartdns=y
+CONFIG_PACKAGE_luci-app-advanced=y
 
 ### DDNS Scripts
-CONFIG_PACKAGE_ddns-scripts=y
-CONFIG_PACKAGE_ddns-scripts-aliyun=y
-CONFIG_PACKAGE_ddns-scripts-dnspod=y
+# CONFIG_PACKAGE_ddns-scripts=y // will use ddns-go instead
+# CONFIG_PACKAGE_ddns-scripts-aliyun=y // will use ddns-go instead
+# CONFIG_PACKAGE_ddns-scripts-dnspod=y // will use ddns-go instead
 
 ### OpenSSL
 CONFIG_OPENSSL_ENGINE=y
@@ -108,9 +114,9 @@ CONFIG_PACKAGE_openssl-util=y
 # CONFIG_OPENSSL_WITH_ERROR_MESSAGES is not set
 
 ### Share Network
-CONFIG_PACKAGE_usbmuxd=y
-CONFIG_PACKAGE_kmod-usb-net-rndis=y
-CONFIG_PACKAGE_kmod-usb-net-ipheth=y
+# CONFIG_PACKAGE_usbmuxd=y
+# CONFIG_PACKAGE_kmod-usb-net-rndis=y
+# CONFIG_PACKAGE_kmod-usb-net-ipheth=y
 
 ### Kernel Modules
 CONFIG_PACKAGE_kmod-br-netfilter=y
@@ -156,10 +162,10 @@ CONFIG_PACKAGE_kmod-xdp-sockets-diag=y
 CONFIG_PACKAGE_kmod-usb-net-rtl8152-vendor=y
 
 ### Kernel Modules - USB WiFi Adapter
-CONFIG_PACKAGE_kmod-mt7921u=y
-CONFIG_PACKAGE_kmod-rtw88-8812au=y
-CONFIG_PACKAGE_kmod-rtw88-8821au=y
-CONFIG_PACKAGE_kmod-rtw88-8822bu=y
+# CONFIG_PACKAGE_kmod-mt7921u=y // I don't use such shit
+# CONFIG_PACKAGE_kmod-rtw88-8812au=y // I don't use such shit
+# CONFIG_PACKAGE_kmod-rtw88-8821au=y // I don't use such shit
+# CONFIG_PACKAGE_kmod-rtw88-8822bu=y // I don't use such shit
 # CONFIG_PACKAGE_kmod-rtl8812au-ct is not set
 
 ### Utilities

@@ -167,3 +167,10 @@ git clone https://$github/sbwml/package_kernel_tcp-brutal package/kernel/tcp-bru
 
 # watchcat - clean config
 true > feeds/packages/utils/watchcat/files/watchcat.config
+
+# daed
+git clone https://github.com/QiuSimons/luci-app-daed package/dae #added
+mkdir -p Package/libcron && wget -O Package/libcron/Makefile https://raw.githubusercontent.com/immortalwrt/packages/refs/heads/master/libs/libcron/Makefile #added
+
+# advanced
+git clone https://github.com/sirpdboy/luci-app-advanced
