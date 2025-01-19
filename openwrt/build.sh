@@ -17,6 +17,7 @@ export ENABLE_LRNG=y
 export ENABLE_GLIBC=n
 export ENABLE_DPDK=y
 export MINIMAL_BUILD=y
+export BUILD_FAST=y
 export LAN=192.168.10.2
 
 GROUP=
@@ -42,9 +43,9 @@ ip_info=`curl -sk https://ip.cooluc.com`;
 
 # script url
 if [ "$isCN" = "CN" ]; then
-    export mirror=https://raw.githubusercontent.com/minkoonim/r4s_build_script/refs/heads/master
+    export mirror=https://init.cooluc.com
 else
-    export mirror=https://raw.githubusercontent.com/minkoonim/r4s_build_script/refs/heads/master
+    export mirror=https://init2.cooluc.com
 fi
 
 # github actions - caddy server
