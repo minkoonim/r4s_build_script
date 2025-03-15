@@ -341,3 +341,4 @@ CONFIG_PACKAGE_proto-bonding=y
 CONFIG_PACKAGE_kmod-i40e=y
 CONFIG_PACKAGE_luci-app-ddns-go=y
 CONFIG_PACKAGE_luci-app-smartdns=y
+CONFIG_PACKAGE_luci-app-keepalived=y
