@@ -171,3 +171,7 @@ true > feeds/packages/utils/watchcat/files/watchcat.config
 # libpcap
 rm -rf package/libs/libpcap
 git clone https://$github/sbwml/package_libs_libpcap package/libs/libpcap
+
+# add luci-app-advanced
+git clone https://github.com/sirpdboy/luci-app-advanced package/new/luci-app-advanced
+git clone https://github.com/sirpdboy/luci-app-advancedplus package/new/luci-app-advancedplus
